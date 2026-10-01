@@ -5,6 +5,9 @@ export const connectDB = async () => {
         const conn = await mongoose.connect(process.env.MONGODB_URI);
         console.log(`MongoDB connected: ${conn.connection.host}`);
     } catch (error) {
-        console.log("MongoDB connection error:", error);
+        // Without a database every request would hang until it timed out.
+        // Crash so the failure is visible and the host can restart us.
+        console.log("MongoDB connection error:", error.message);
+        process.exit(1);
     }
 };
