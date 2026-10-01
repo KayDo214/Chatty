@@ -28,20 +28,16 @@ export const signup = async (req, res) => {
             password:hashedPassword
         })
 
-        if (newUser){
-            generateToken(newUser._id,res)
-            await newUser.save();
+        // Save first: if it fails, the client must not get a login cookie.
+        await newUser.save();
+        generateToken(newUser._id,res)
 
-            res.status(201).json({
-                _id: newUser._id,
-                fullName: newUser.fullName,
-                email: newUser.email,
-                profilePic: newUser.profilePic,
-            });
-            
-        } else {
-            res.status(400).json({message: "Invalid data usage" });
-        }
+        res.status(201).json({
+            _id: newUser._id,
+            fullName: newUser.fullName,
+            email: newUser.email,
+            profilePic: newUser.profilePic,
+        });
     } catch (error) {
         console.log("Error in signup controller", error.message);
         res.status(500).json({ message: "Internal Server Error"});
