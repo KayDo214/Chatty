@@ -86,10 +86,10 @@ export const useAuthStore = create((set, get) => ({
     const { authUser } = get();
     if (!authUser || get().socket?.connected) return;
 
+    // The server identifies us from the httpOnly jwt cookie, so send cookies
+    // (needed in dev, where the backend is on a different port).
     const socket = io(BASE_URL, {
-      query: {
-        userId: authUser._id,
-      },
+      withCredentials: true,
     });
     socket.connect();
 
