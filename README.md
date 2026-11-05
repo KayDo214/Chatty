@@ -1,6 +1,6 @@
 # Chatty
 
-A full-stack, real-time messaging application built with the MERN stack. ChatApp supports secure cookie-based authentication, one-to-one text and image messages, live delivery with Socket.IO, online presence, profile photos, and customizable themes.
+A full-stack, real-time messaging application built with the MERN stack. Chatty supports secure cookie-based authentication, one-to-one text and image messages, live delivery with Socket.IO, online presence, profile photos, and customizable themes.
 
 ## Features
 
@@ -27,7 +27,7 @@ A full-stack, real-time messaging application built with the MERN stack. ChatApp
 ## Project Structure
 
 ```text
-ChatApp/
+Chatty/
 ├── backend/
 │   └── src/
 │       ├── controller/     # Authentication and message handlers
@@ -61,8 +61,8 @@ For a deeper explanation of the request, state, authentication, and real-time me
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/KayDo214/ChatApp.git
-cd ChatApp
+git clone https://github.com/KayDo214/Chatty.git
+cd Chatty
 npm install --prefix backend
 npm install --prefix frontend
 ```

@@ -1,4 +1,4 @@
-# ChatApp Architecture
+# Chatty Architecture
 
 This project is a MERN-style fullstack chat application with a React/Vite frontend, an Express/MongoDB backend, JWT cookie authentication, Cloudinary-backed image uploads, and Socket.IO for online-user presence and live incoming messages.
 

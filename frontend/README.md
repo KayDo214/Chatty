@@ -1,6 +1,6 @@
-# React + Vite
+# Chatty Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The React and Vite frontend for Chatty. It provides the messaging interface, authentication screens, profile management, online presence, and theme selection.
 
 Currently, two official plugins are available:
 

@@ -1,7 +1,7 @@
 {
-  "name": "first-project",
+  "name": "chatty",
   "version": "1.0.0",
-  "description": "",
+  "description": "A full-stack real-time messaging application",
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KayDo214/ChatApp.git"
+    "url": "git+https://github.com/KayDo214/Chatty.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/KayDo214/ChatApp/issues"
+    "url": "https://github.com/KayDo214/Chatty/issues"
   },
-  "homepage": "https://github.com/KayDo214/ChatApp#readme"
+  "homepage": "https://github.com/KayDo214/Chatty#readme"
 }
