@@ -1,4 +1,4 @@
-# ChatApp
+# Chatty
 
 A full-stack, real-time messaging application built with the MERN stack. ChatApp supports secure cookie-based authentication, one-to-one text and image messages, live delivery with Socket.IO, online presence, profile photos, and customizable themes.
 
